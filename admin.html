@@ -10,15 +10,15 @@
     <link rel="stylesheet" href="//hullstrap.s3.amazonaws.com/stylesheets/hullstrap.css">
     <script src="//hullstrap.s3.amazonaws.com/javascripts/hullstrap.js"></script>
 
-    <script src="https://d3f5pyioow99x0.cloudfront.net/0.6.15/hull.js"></script>
+    <script src="https://d3f5pyioow99x0.cloudfront.net/0.8/hull.js"></script>
     <script>
       Hull.init({
         appId: "516d68fc28e06bb7b8000040",
-        orgUrl: "http://hull-demos.hullapp.io"
-      })
+        orgUrl: "https://hull-demos.hullapp.io"
+      });
    </script>
 
-    <!-- "wrapper" widget declaration -->
+    <!-- "wrapper" component declaration -->
   </head>
 
   <body class='admin_page'>
@@ -29,7 +29,7 @@
         </div>
         <div class="row">
           <div class="span12">
-            <div data-hull-widget="admin/registration@hull" class='well'></div>
+            <div data-hull-component="admin/registration@hull" class='well'></div>
           </div>
         </div>
         <div class="page-header">
@@ -37,14 +37,14 @@
         </div>
         <div class="row">
           <div class="span8">
-            <div data-hull-widget="admin/users@hull"></div>
+            <div data-hull-namespace="hull-demos" data-hull-component="admin/users_list@hull"></div>
           </div>
           <div class="span4">
-            <div data-hull-widget="admin/user_profile@hull"></div>
+            <div data-hull-namespace="hull-demos" data-hull-component="admin/user_profile@hull"></div>
           </div>
         </div>
       </div>
     </div>
-    <div data-hull-widget="footer@hull"> </div>
+    <div data-hull-component="utils/footer@hull"> </div>
   </body>
 </html>
