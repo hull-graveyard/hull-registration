@@ -11,23 +11,23 @@
     <link rel="stylesheet" href="//hullstrap.s3.amazonaws.com/stylesheets/hullstrap.css">
     <script src="//hullstrap.s3.amazonaws.com/javascripts/hullstrap.js"></script>
 
-    <script src="https://d3f5pyioow99x0.cloudfront.net/0.6.15/hull.js"></script>
+    <script src="https://d3f5pyioow99x0.cloudfront.net/0.8/hull.js"></script>
     <!-- Initialize hull -->
     <script>
       Hull.init({
         appId: "516d68fc28e06bb7b8000040",
-        orgUrl: "http://hull-demos.hullapp.io"
-      })
+        orgUrl: "https://hull-demos.hullapp.io"
+      });
    </script>
 
     <link rel="stylesheet" href="style.css">
-    <!-- "wrapper" widget declaration -->
+    <!-- "wrapper" component declaration -->
     <script>
       Hull.component('wrapper', {
         // Specify template.
         templates: ['intro'],
 
-        // Re-render the widget each time the user changes.
+        // Re-render the component each time the user changes.
         refreshEvents: ['model.hull.me.change']
       });
     </script>
@@ -38,10 +38,10 @@
           <a class="btn btn-small btn-inline" href="#" data-hull-action="logout">Logout</a>
         </h4>
         <hr>
-        <div data-hull-widget="registration@hull" data-hull-editable="true"></div>
+        <div data-hull-component="registration/form@hull" data-hull-editable="true"></div>
       {{else}}
         <h4>Hello visitor</h4>
-        <div data-hull-widget="login_button@hull"></div>
+        <div data-hull-component="login/button@hull"></div>
       {{/if}}
     </script>
   </head>
@@ -56,11 +56,11 @@
         </div>
         <div class="row">
           <div class="span6 offset3">
-            <div data-hull-widget="wrapper"></div>
+            <div data-hull-component="wrapper"></div>
           </div>
         </div>
       </div>
     </div>
-    <div data-hull-widget="footer@hull"> </div>
+    <div data-hull-component="utils/footer@hull"> </div>
   </body>
 </html>
