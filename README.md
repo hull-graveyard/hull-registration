@@ -97,7 +97,7 @@ Now, clicking on the sign-in button should show a form that contains two fields 
 
 What about asking the user his/her website ?
 
-To do that, we need the to instanciate the `registration_admin` component that will allow us to define our form's fields.
+To do that, we need the to instanciate the `admin/registration@hull` component that will allow us to define our form's fields.
 It is a component dedicated to customizing the registration form in your hull.io app.
 We will put this component in a new HTML document.
 
@@ -118,7 +118,7 @@ We will put this component in a new HTML document.
     </script>
   </head>
   <body>
-    <div data-hull-component="registration_admin@hull"></div>
+    <div data-hull-component="admin/registration@hull"></div>
   </body>
 </html>
 ```
