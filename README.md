@@ -1,9 +1,9 @@
 # User Registration Tutorial
 
-For this tutorial, we'll create a registration workflow. It's a two-step process:
+For this tutorial, we'll create a form so Users can register and fill-in details. It's a two-step process:
 
-* ask the user to log in with his/her Facebook account
-* ask him/her to fill in a form to complete the profile
+* Ask the user to log in with his/her Facebook account
+* Ask him/her to fill in a form to complete the profile
 
 ## Prerequisites
 
