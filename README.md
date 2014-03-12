@@ -11,7 +11,7 @@ For this tutorial, we'll create a form so Users can register and fill-in details
 - An authentication provider linked to your app, so users can log in. For this tutorial we will use Facebook but you can use any other supported by hull. [See our documentation](http://hull.io/docs/references/services) for more details.
 - An HTTP server, to serve the files included in this repository. If you're not sure how to do it, check out [our guide](https://github.com/hull/minimhull/wiki/Setup-an-HTTP-server).
 
-## Step 1 - Bootstraping your app
+## Step 1 - Bootstrapping your app
 
 First, create an `index.html`. Add jQuery, and `hull.js` to your page. For the sake of this tutorial,
 we will also use Twitter Bootstrap, though it is not mandatory.
@@ -20,12 +20,8 @@ we will also use Twitter Bootstrap, though it is not mandatory.
 <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css">
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 <script src="//d3f5pyioow99x0.cloudfront.net/0.8/hull.js"></script>
-```
-
-Now initialize hull.
-
-```html
 <script>
+// Now initialize hull.
 Hull.init({
   appId: 'APPLICATION_ID',
   orgUrl: 'ORGANIZATION_URL'
@@ -33,7 +29,7 @@ Hull.init({
 </script>
 ```
 
-`APPLICATION_ID` and `ORGANIZATION_URL` must be replaced with the correct values which you can find in your [admin](https://accounts.hullapp.io).
+Replace `APPLICATION_ID` and `ORGANIZATION_URL` with the correct values which you can find in your [dashboard](https://accounts.hullapp.io).
 
 ## Step 2 - Creating wrapper component
 
@@ -61,7 +57,7 @@ To do that we need to create a `wrapper` component. Insert the following code in
   </script>
 ```
 
-Congratualations! You've just created your first component! Let's add it to our HTML document.
+Congratulations! You've just created your first component! Let's add it to our HTML document.
 
 ```html
 <div data-hull-component="wrapper"></div>
@@ -123,7 +119,7 @@ We will put this component in a new HTML document.
 </html>
 ```
 
-Replace `APPLICATION_ID`, and `ORGANIZATION_URL` with the correct values which you can find in your [admin](http://hullapp.io).
+Replace `APPLICATION_ID`, and `ORGANIZATION_URL` with the correct values which you can find in your [dashboard](http://hullapp.io).
 
 Open this new file in your browser and fill the textare with:
 
